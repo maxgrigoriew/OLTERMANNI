@@ -1,0 +1,19 @@
+@import "normalize";
+@import "fonts";
+@import "vars";
+@import "promo";
+
+body {
+  font-family: PF-Din-Text-Cond-Pro;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 22px;
+  color: $default-color;
+}
+
+.container {
+  max-width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}

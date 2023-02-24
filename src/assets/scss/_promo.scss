@@ -1,0 +1,105 @@
+.promo {
+  // background-image: url('./../images/promo.png');
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-color: $yellow-color;
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  &__img {
+    position: relative;
+
+    &-container {
+      position: relative;
+    }
+
+    &-background {
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      position: relative;
+      padding-top: 17px;
+      left: -60px;
+    }
+
+    &-man {
+      position: absolute;
+      top: 70px;
+      left: 180px;
+      z-index: 2;
+    }
+  }
+
+
+
+  &__button {
+    align-self: center;
+    padding: 18px 60px;
+    border: 8px solid #fff;
+    color: #fff;
+    border-radius: 100px;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: $accent-color;
+    margin: -26px 0 94px;
+    position: relative;
+    z-index: 1;
+  }
+
+  &__text {
+    font-size: 60px;
+    color: $accent-color;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 80px;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 0 42px;
+    grid-template-columns: repeat(5, 1fr);
+    align-items: flex-start;
+
+    &-item {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      min-width: 150px;
+    }
+
+    &-img {
+      margin-bottom: 18px;
+    }
+
+    &-text {
+      position: relative;
+      width: 100%;
+    }
+
+    &-text::after {
+      content: '';
+      background-image: url("./../images/icons/arrov.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      position: absolute;
+      width: 24px;
+      height: 46px;
+      top: 0;
+      right: -34px;
+      z-index: 1;
+    }
+
+    &-item:last-child .promo__list-text::after {
+      display: none;
+    }
+
+
+  }
+}
